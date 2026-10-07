@@ -1,0 +1,2408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+}
+
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 60px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    background: transparent;
+}
+
+
+/* Logo */
+
+.logo {
+    width: 35%;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+
+    font-family: cursive;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+/* Menu */
+
+.menu {
+    width: 35%;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ffc107;
+}
+
+
+/* Right Menu */
+
+.right-menu {
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 20px;
+}
+
+.right-menu a {
+    color: white;
+    font-size: 19px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.right-menu a:hover {
+    color: #ffc107;
+}
+
+
+/* Online Order Button */
+
+.order-btn {
+    border: none;
+
+    background-color: #ffc107;
+    color: white;
+
+    padding: 11px 25px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+
+/* Mobile Icon */
+
+.menu-icon {
+    display: none;
+
+    color: white;
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .menu {
+        width: 40%;
+        gap: 15px;
+    }
+
+    .right-menu {
+        width: 30%;
+        gap: 12px;
+    }
+
+    .order-btn {
+        padding: 9px 15px;
+    }
+}
+
+
+/* Tablet / Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+
+        padding: 15px 25px;
+
+        background-color: #222;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .right-menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo a {
+        font-size: 28px;
+    }
+
+    .menu-icon {
+        font-size: 23px;
+    }
+}
+
+/* =========================
+   BASIC
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Hero Image */
+
+.hero img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Dark Overlay */
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.45);
+}
+
+
+/* Hero Content */
+
+.hero-content {
+    position: absolute;
+
+    top: 50%;
+    left: 8%;
+
+    transform: translateY(-50%);
+
+    color: white;
+
+    z-index: 2;
+
+    margin-top: -50px;
+}
+
+
+/* Heading */
+
+.hero-content h1 {
+    font-family: cursive;
+
+    font-size: 55px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+/* Paragraph */
+
+.hero-content p {
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* Buttons */
+
+.hero-content button,
+.offer-text button {
+
+    background-color: #ffc107;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 28px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.hero-content button:hover,
+.offer-text button:hover {
+
+    background-color: #e0a800;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   OFFERS
+========================= */
+
+.offers {
+
+    width: 100%;
+
+    padding: 60px 7%;
+}
+
+
+/* Offer Container */
+
+.offer-container {
+
+    display: flex;
+
+    gap: 30px;
+
+    width: 100%;
+}
+
+
+/* Offer Card */
+
+.offer-card {
+
+    width: 50%;
+
+    background-color: #212529;
+
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* Offer Image */
+
+.offer-card img {
+
+    width: 170px;
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #ffc107;
+
+    flex-shrink: 0;
+}
+
+
+/* Offer Text */
+
+.offer-text {
+
+    margin-left: 25px;
+}
+
+
+/* Offer Heading */
+
+.offer-text h2 {
+
+    font-family: cursive;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Discount */
+
+.offer-text h1 {
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.offer-text h1 span {
+
+    font-size: 25px;
+
+    font-weight: normal;
+}
+
+
+/* Cart */
+
+.offer-text button span {
+
+    margin-left: 8px;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .hero-content {
+        left: 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .offer-container {
+        flex-direction: column;
+    }
+
+    .offer-card {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .hero-content {
+
+        left: 5%;
+
+        right: 5%;
+
+        margin-top: -20px;
+    }
+
+    .hero-content h1 {
+
+        font-size: 35px;
+    }
+
+    .hero-content p {
+
+        font-size: 14px;
+    }
+
+    .hero-content p br {
+
+        display: none;
+    }
+
+
+    /* Offers */
+
+    .offers {
+
+        padding: 40px 20px;
+    }
+
+    .offer-container {
+
+        gap: 20px;
+    }
+
+    .offer-card {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 25px 15px;
+    }
+
+    .offer-card img {
+
+        width: 150px;
+        height: 150px;
+
+        margin-bottom: 20px;
+    }
+
+    .offer-text {
+
+        margin-left: 0;
+    }
+
+    .offer-text h2 {
+
+        font-size: 26px;
+    }
+
+    .offer-text h1 {
+
+        font-size: 42px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .hero-content h1 {
+
+        font-size: 30px;
+    }
+
+    .hero-content p {
+
+        font-size: 13px;
+    }
+
+    .offer-card img {
+
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* =========================
+   BASIC
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+/* =========================
+   MENU SECTION
+========================= */
+
+.menu-section {
+    width: 100%;
+
+    padding: 70px 7%;
+}
+
+
+/* Heading */
+
+.menu-section > h1 {
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 45px;
+
+    margin-bottom: 40px;
+
+    color: #222831;
+}
+
+
+/* =========================
+   CATEGORY BUTTONS
+========================= */
+
+.categories {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 45px;
+
+    flex-wrap: wrap;
+}
+
+
+.categories button {
+    border: none;
+
+    background-color: #f5f5f5;
+
+    color: #222;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Active Button */
+
+.categories button.active {
+    background-color: #222831;
+
+    color: white;
+}
+
+
+/* Hover */
+
+.categories button:hover {
+    background-color: #222831;
+
+    color: white;
+}
+
+
+/* =========================
+   MENU CONTAINER
+========================= */
+
+.menu-container {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================
+   MENU CARD
+========================= */
+
+.menu-card {
+
+    background-color: #222831;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.menu-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   FOOD IMAGE
+========================= */
+
+.food-image {
+
+    width: 100%;
+
+    height: 250px;
+
+    background-color: #f5f5f5;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 0 0 0 40px;
+}
+
+
+.food-image img {
+
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+}
+
+
+.menu-card:hover .food-image img {
+
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   FOOD CONTENT
+========================= */
+
+.food-content {
+
+    padding: 25px;
+
+    color: white;
+}
+
+
+.food-content h2 {
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+
+.food-content p {
+
+    color: #ddd;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   PRICE + CART
+========================= */
+
+.food-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.food-bottom h3 {
+
+    font-size: 20px;
+
+    margin: 0;
+}
+
+
+/* Cart Button */
+
+.cart-btn {
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #ffc107;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.cart-btn:hover {
+
+    background-color: #e0a800;
+
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .menu-container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .menu-section {
+
+        padding: 50px 20px;
+    }
+
+
+    .menu-section > h1 {
+
+        font-size: 38px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .categories {
+
+        margin-bottom: 30px;
+    }
+
+
+    .categories button {
+
+        padding: 9px 18px;
+
+        font-size: 14px;
+    }
+
+
+    .menu-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .food-image {
+
+        height: 230px;
+    }
+
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #222831;
+
+    color: white;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    width: 100%;
+
+    background-color: #222831;
+}
+
+
+/* =========================
+   ABOUT CONTAINER
+========================= */
+
+.about-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 100px 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+}
+
+
+/* =========================
+   ABOUT IMAGE
+========================= */
+
+.about-image {
+
+    width: 50%;
+
+    text-align: center;
+}
+
+
+.about-image img {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   ABOUT CONTENT
+========================= */
+
+.about-content {
+
+    width: 50%;
+}
+
+
+.about-content h2 {
+
+    font-family: cursive;
+
+    font-size: 45px;
+
+    margin-bottom: 25px;
+}
+
+
+.about-content p {
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #eeeeee;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   READ MORE BUTTON
+========================= */
+
+.about-content button {
+
+    background-color: #ffc107;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 28px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.about-content button:hover {
+
+    background-color: #e0a800;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background-color: #222831;
+
+    color: white;
+
+    padding: 60px 7% 25px;
+}
+
+
+/* =========================
+   FOOTER CONTAINER
+========================= */
+
+.footer-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 60px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   FOOTER COLUMN
+========================= */
+
+.footer-column h2 {
+
+    font-family: cursive;
+
+    font-size: 28px;
+
+    margin-bottom: 25px;
+}
+
+
+.footer-column p {
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #eeeeee;
+
+    margin-bottom: 10px;
+}
+
+
+/* Footer Icons */
+
+.footer-column p i {
+
+    margin-right: 8px;
+
+    color: white;
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-icons {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.social-icons a {
+
+    width: 38px;
+
+    height: 38px;
+
+    background-color: white;
+
+    color: #222831;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.social-icons a:hover {
+
+    background-color: #ffc107;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   HR
+========================= */
+
+footer hr {
+
+    max-width: 1200px;
+
+    margin: 40px auto 25px;
+
+    border: none;
+
+    border-top: 1px solid #555;
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.copyright {
+
+    text-align: center;
+
+    color: #eeeeee;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+.copyright p {
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-container {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 70px 30px;
+
+        gap: 40px;
+    }
+
+
+    .about-image {
+
+        width: 100%;
+    }
+
+
+    .about-content {
+
+        width: 100%;
+    }
+
+
+    .about-content h2 {
+
+        font-size: 40px;
+    }
+
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .about-container {
+
+        padding: 60px 20px;
+    }
+
+
+    .about-image img {
+
+        max-width: 350px;
+    }
+
+
+    .about-content h2 {
+
+        font-size: 35px;
+    }
+
+
+    .about-content p {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    footer {
+
+        padding: 50px 20px 20px;
+    }
+
+
+    .footer-column h2 {
+
+        font-size: 26px;
+    }
+
+
+    .footer-column p {
+
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #ffffff;
+
+    color: #222831;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    width: 100%;
+
+    height: 90px;
+
+    background: linear-gradient(
+        90deg,
+        #101820,
+        #222831,
+        #343d43
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 12%;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 1000;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: cursive;
+
+    font-size: 32px;
+
+    font-style: italic;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+.menu a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+
+    color: #ffc107;
+}
+
+
+/* Active */
+
+.menu a.active {
+
+    color: #ffc107;
+}
+
+
+/* =========================
+   RIGHT MENU
+========================= */
+
+.right-menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+.right-menu a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+}
+
+
+.right-menu a:hover {
+
+    color: #ffc107;
+}
+
+
+/* =========================
+   ORDER BUTTON
+========================= */
+
+.right-menu button {
+
+    border: none;
+
+    background-color: #ffc107;
+
+    color: white;
+
+    padding: 12px 28px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.right-menu button:hover {
+
+    background-color: #e0a800;
+
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   BOOKING SECTION
+========================= */
+
+.booking-section {
+
+    width: 100%;
+
+    padding-top: 90px;
+}
+
+
+/* =========================
+   BOOKING CONTAINER
+========================= */
+
+.booking-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 90px 20px 70px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+
+/* =========================
+   BOOKING FORM
+========================= */
+
+.booking-form {
+
+    width: 100%;
+}
+
+
+.booking-form h1 {
+
+    font-family: cursive;
+
+    font-size: 45px;
+
+    font-style: italic;
+
+    margin-bottom: 35px;
+
+    color: #222831;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.booking-form form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   INPUT + SELECT
+========================= */
+
+.booking-form input,
+.booking-form select {
+
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 25px;
+
+    border: 1px solid #bbbbbb;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background-color: white;
+
+    color: #333;
+
+    font-size: 15px;
+}
+
+
+.booking-form input:focus,
+.booking-form select:focus {
+
+    border-color: #ffc107;
+}
+
+
+/* Date */
+
+.booking-form input[type="date"] {
+
+    color: #555;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   BOOK NOW BUTTON
+========================= */
+
+.book-btn {
+
+    width: 207px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #ffc107;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+
+.book-btn:hover {
+
+    background-color: #e0a800;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MAP
+========================= */
+
+.map-container {
+
+    width: 100%;
+
+    height: 360px;
+}
+
+
+.map {
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    background-color: #7d9b75;
+
+    background-image:
+
+        linear-gradient(
+            45deg,
+            transparent 48%,
+            rgba(255,255,255,0.5) 49%,
+            rgba(255,255,255,0.5) 51%,
+            transparent 52%
+        ),
+
+        linear-gradient(
+            -45deg,
+            transparent 48%,
+            rgba(255,255,255,0.35) 49%,
+            rgba(255,255,255,0.35) 51%,
+            transparent 52%
+        );
+
+    background-size: 120px 120px;
+}
+
+
+/* Roads */
+
+.map::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150%;
+
+    height: 55px;
+
+    background-color: #d7d7d7;
+
+    transform: rotate(-25deg);
+
+    top: 130px;
+
+    left: -100px;
+
+    box-shadow:
+        0 2px 0 #ffffff;
+}
+
+
+.map::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150%;
+
+    height: 35px;
+
+    background-color: #eeeeee;
+
+    transform: rotate(25deg);
+
+    top: 180px;
+
+    left: -100px;
+}
+
+
+/* =========================
+   MAP OVERLAY
+========================= */
+
+.map-overlay {
+
+    position: absolute;
+
+    z-index: 5;
+
+    top: 20px;
+
+    left: 20px;
+
+    background: rgba(255,255,255,0.92);
+
+    padding: 15px 20px;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.2);
+}
+
+
+.map-overlay i {
+
+    color: #e63946;
+
+    font-size: 20px;
+}
+
+
+.map-overlay h3 {
+
+    font-size: 16px;
+
+    margin-top: 5px;
+}
+
+
+.map-overlay p {
+
+    font-size: 12px;
+
+    color: #666;
+
+    margin-top: 4px;
+}
+
+
+/* =========================
+   MAP PIN
+========================= */
+
+.map-pin {
+
+    position: absolute;
+
+    z-index: 10;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 55px;
+
+    height: 55px;
+
+    background-color: #e63946;
+
+    border-radius: 50% 50% 50% 0;
+
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow:
+        0 5px 10px rgba(0,0,0,0.25);
+}
+
+
+.map-pin i {
+
+    color: white;
+
+    font-size: 22px;
+
+    transform: rotate(45deg);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+
+        padding: 0 5%;
+    }
+
+
+    .menu {
+
+        gap: 20px;
+    }
+
+
+    .right-menu {
+
+        gap: 12px;
+    }
+
+
+    .right-menu button {
+
+        padding: 10px 18px;
+    }
+
+
+    .booking-container {
+
+        padding: 70px 30px;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+    .navbar {
+
+        height: auto;
+
+        min-height: 75px;
+
+        padding: 15px 25px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .menu {
+
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        padding-top: 15px;
+
+        gap: 20px;
+    }
+
+
+    .right-menu {
+
+        gap: 12px;
+    }
+
+
+    .right-menu button {
+
+        display: none;
+    }
+
+
+    .booking-section {
+
+        padding-top: 120px;
+    }
+
+
+    .booking-container {
+
+        grid-template-columns: 1fr;
+
+        padding: 50px 25px;
+    }
+
+
+    .booking-form h1 {
+
+        font-size: 38px;
+    }
+
+
+    .map-container {
+
+        height: 350px;
+
+        margin-top: 20px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+    .logo a {
+
+        font-size: 27px;
+    }
+
+
+    .menu {
+
+        gap: 12px;
+    }
+
+
+    .menu a {
+
+        font-size: 12px;
+    }
+
+
+    .booking-container {
+
+        padding: 40px 20px;
+    }
+
+
+    .booking-form h1 {
+
+        font-size: 34px;
+    }
+
+
+    .booking-form input,
+    .booking-form select {
+
+        height: 50px;
+
+        padding: 0 18px;
+    }
+
+
+    .book-btn {
+
+        width: 180px;
+    }
+
+
+    .map-container {
+
+        height: 300px;
+    }
+
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: white;
+
+    color: #222831;
+}
+
+
+/* =========================
+   TESTIMONIAL SECTION
+========================= */
+
+.testimonial-section {
+
+    width: 100%;
+
+    background-color: white;
+
+    padding: 80px 20px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.testimonial-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.testimonial-container > h1 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-style: italic;
+
+    font-size: 42px;
+
+    color: #222831;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   CARDS CONTAINER
+========================= */
+
+.testimonial-cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================
+   TESTIMONIAL ITEM
+========================= */
+
+.testimonial-item {
+
+    position: relative;
+
+    padding-bottom: 65px;
+}
+
+
+/* =========================
+   TESTIMONIAL BOX
+========================= */
+
+.testimonial-box {
+
+    background-color: #222831;
+
+    color: white;
+
+    border-radius: 5px;
+
+    padding: 27px;
+
+    min-height: 190px;
+
+    position: relative;
+}
+
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.testimonial-box p {
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================
+   CUSTOMER NAME
+========================= */
+
+.testimonial-box h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   CUSTOMER SUBTITLE
+========================= */
+
+.testimonial-box span {
+
+    font-size: 15px;
+
+    color: #eeeeee;
+}
+
+
+/* =========================
+   CUSTOMER IMAGE
+========================= */
+
+.customer-image {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 100px;
+
+    height: 100px;
+
+    margin-left: 0;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.customer-image img {
+
+    width: 90px;
+
+    height: 90px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #ffc107;
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   YELLOW TRIANGLE
+========================= */
+
+.image-shape {
+
+    position: absolute;
+
+    top: -8px;
+
+    left: 45px;
+
+    width: 0;
+
+    height: 0;
+
+    border-left: 15px solid transparent;
+
+    border-right: 15px solid transparent;
+
+    border-bottom: 18px solid #ffc107;
+
+    z-index: 1;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.testimonial-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 45px;
+}
+
+
+.testimonial-buttons button {
+
+    width: 48px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #ffc107;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.testimonial-buttons button:hover {
+
+    background-color: #e0a800;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .testimonial-cards {
+
+        grid-template-columns: 1fr;
+
+        max-width: 700px;
+
+        margin: auto;
+    }
+
+
+    .testimonial-container > h1 {
+
+        font-size: 38px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .testimonial-section {
+
+        padding: 60px 20px;
+    }
+
+
+    .testimonial-container > h1 {
+
+        font-size: 32px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .testimonial-box {
+
+        padding: 22px;
+
+        min-height: auto;
+    }
+
+
+    .testimonial-box p {
+
+        font-size: 14px;
+    }
+
+
+    .testimonial-box h3 {
+
+        font-size: 17px;
+    }
+
+
+    .customer-image {
+
+        width: 85px;
+
+        height: 85px;
+    }
+
+
+    .customer-image img {
+
+        width: 80px;
+
+        height: 80px;
+    }
+
+
+    .image-shape {
+
+        left: 35px;
+    }
+
+
+    .testimonial-buttons {
+
+        margin-top: 35px;
+    }
+
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0 50px;
+}
+
+.category-btn {
+    text-decoration: none;
+    color: #222831;
+    background-color: #f1f1f1;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.category-btn:hover {
+    background-color: #222831;
+    color: white;
+}
+
+.category-btn.active {
+    background-color: #222831;
+    color: white;
+}
